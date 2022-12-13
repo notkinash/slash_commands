@@ -23,7 +23,9 @@ defmodule SlashCommands.MixProject do
   end
 
   defp deps do
-    []
+    [
+      {:credo, "~> 1.6", only: [:dev, :test], runtime: false}
+    ]
   end
 
   defp description do
@@ -33,7 +35,7 @@ defmodule SlashCommands.MixProject do
   defp package do
     [
       name: "slash_commands",
-      files: ~w(lib .formatter.exs mix.exs README* LICENSE*),
+      files: ~w(lib .formatter.exs .credo.exs mix.exs README* LICENSE*),
       licenses: ["MIT"],
       links: %{"GitHub" => @source_url}
     ]
