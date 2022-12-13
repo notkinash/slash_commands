@@ -24,7 +24,8 @@ defmodule SlashCommands.MixProject do
 
   defp deps do
     [
-      {:credo, "~> 1.6", only: [:dev, :test], runtime: false}
+      {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
+      {:ex_doc, "~> 0.29.1", only: :dev, runtime: false}
     ]
   end
 
